@@ -1,125 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <title>Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <title>ByteEngage</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    body {
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #000000 0%, #0d0d0d 100%);
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
 
-  <!-- Favicons -->
-  <!--<link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #cccccc;
+    }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff;
+      }
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-<style>
+    /* Particle background effect using pseudo-elements */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
 
-</style>
-  <!-- =======================================================
- <
-  ======================================================== -->
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #00f0ff;
+      border-radius: 50%;
+      animation: float 10s linear infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="particles">
+    <!-- You can duplicate or generate more particles -->
+    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+    <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
+    <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+    <div class="particle" style="left: 60%; animation-delay: 1s;"></div>
+    <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 80%; animation-delay: 5s;"></div>
+    <div class="particle" style="left: 90%; animation-delay: 7s;"></div>
+  </div>
 
-  <!-- ======= Header/Navbar ======= -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-    <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a class="navbar-brand text-brand" href="index.html">Byte<span class="color-b">Engage</span></a>
-     
-    </div>
-  </nav><!-- End Header/Navbar -->
-
-  <!-- ======= Intro Section ======= -->
-
-   
- 
-  <main id="main" class="">
- <a class="navbar-brand text-brand" href="index.html">Coming<span class="color-b">Soon....</span></a>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
- 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          
-          <div class="socials-a">
-            <ul class="list-inline">
-              <!-- <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-twitter" aria-hidden="true"></i>
-                </a>
-              </li> -->
-              <!-- <li class="list-inline-item">
-                <a href="#">
-                  <i class="bi bi-instagram" aria-hidden="true"></i>
-                </a>
-              </li> -->
-              
-            </ul>
-          </div>
-          <div class="copyright-footer">
-            <p class="copyright color-text-a">
-              &copy; Copyright
-              <span class="color-a">ByteEngage</span> All Rights Reserved.
-            </p>
-          </div>
-          <div class="credits">
-           
-            Designed by <a href="#">ByteEngage</a><br>
-            
-              <a href="#">
-                <i class="bi bi-envelope"></i>
-                panditharshit1@gmail.com
-              </a>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <h1>🚀 Coming Soon</h1>
+  <p>We're building something amazing. Stay tuned!</p>
 </body>
-
 </html>
-
-
-
-
-
-
